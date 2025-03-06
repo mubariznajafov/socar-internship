@@ -1,0 +1,233 @@
+@use "../../utils/variables" as *;
+.home {
+  font-family: $secondary_font_family;
+  .top_page {
+    margin-bottom: 50px;
+    background: #e3e8eb;
+    .top_page_elements {
+      padding: 50px 110px;
+      .logo {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 10px;
+        .img {
+          width: 100px;
+          border: 2px solid $main_color;
+          background: $primary_color;
+          border-radius: 5px;
+          cursor: pointer;
+          img {
+            width: 100%;
+          }
+        }
+        .buttons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          .btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+          }
+        }
+      }
+      .name {
+        h1 {
+          color: $main_color;
+        }
+      }
+      .virtual_jour {
+        margin-top: 10px;
+        .btn {
+          border: 2px solid $primary_color;
+          color: $primary_color;
+          border-radius: 5px;
+          padding: 7px 10px;
+          background: $third_color;
+          box-shadow: 1px 10px 11px -5px rgba(196, 196, 196, 1);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .about {
+    padding: 50px 110px;
+    .cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      .card {
+        width: 400px;
+        border: 3px solid $third_color;
+        border-radius: 10px;
+        padding: 10px;
+        h3 {
+          color: $third_color;
+        }
+        p {
+          margin: 10px 0;
+          color: $third_color;
+        }
+        .btn {
+          border: none;
+          background: transparent;
+          color: $main_color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 6px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .partner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px;
+    .partners_top {
+      h1 {
+        color: $third_color;
+      }
+    }
+    .partners_bottom {
+      border-top: 2px solid $third_color;
+      border-bottom: 2px solid $third_color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+      .img1 {
+        width: 69px;
+        margin-left: 50px;
+        img {
+          width: 100%;
+        }
+      }
+      .img2 {
+        width: 100px;
+        margin-right: 40px;
+        img {
+          width: 100%;
+        }
+      }
+      .img3 {
+        width: 205px;
+        img {
+          width: 100%;
+        }
+      }
+      .img4 {
+        width: 284px;
+        img {
+          width: 100%;
+        }
+      }
+      .img5 {
+        width: 99px;
+        img {
+          width: 100%;
+        }
+      }
+      .img1 {
+        width: 69px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .statistics {
+    margin: 100px;
+    padding: 50px 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    .statistic_top {
+      h1 {
+        color: $third_color;
+      }
+    }
+    .statistic_bottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      .card {
+        width: 300px;
+        h1,
+        p {
+          color: $third_color;
+        }
+      }
+    }
+  }
+  .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+  }
+  .feedbacks {
+    padding: 50px 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #e3e8eb;
+    margin: 30px 50px;
+
+    .feedback_bottom {
+      margin-top: 30px;
+      .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        .card {
+          width: 250px;
+          background: $primary_color;
+          padding: 20px;
+          border-radius: 10px;
+          .commentor {
+            margin-top: 10px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            gap: 10px;
+            .img {
+              width: 30px;
+              border: 1px solid none;
+              border-radius: 50%;
+              display: flex;
+              overflow: hidden;
+              img {
+                width: 100%;
+              }
+            }
+            .name {
+              .company_name {
+                font-weight: 400;
+                cursor: pointer;
+              }
+              .person_title {
+                font-weight: 200;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

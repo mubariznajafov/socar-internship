@@ -1,0 +1,60 @@
+@use "../../utils//variables" as *;
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: $secondary_font_family;
+  background: $primary_bg_color;
+  .footer_elements {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    place-items: flex-start;
+    gap: 50px;
+    .element {
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h4,
+      p {
+        color: $primary_color;
+      }
+      p {
+        font-weight: 200;
+        cursor: pointer;
+      }
+      ul {
+        list-style-type: none;
+        li {
+          margin: 10px 0;
+        }
+      }
+    }
+    .adresses {
+      .social_medias {
+        ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: left;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .footer_copyrights {
+    width: 100%;
+    p {
+      color: $primary_color;
+      margin: 10px;
+      text-align: center;
+      font-weight: 200;
+      font-size: 14px;
+    }
+  }
+}

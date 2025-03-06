@@ -1,0 +1,100 @@
+@use "../../utils/variables" as *;
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $secondary_font_family;
+  .navbar_top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 740px;
+    align-items: center;
+    margin-right: 50px;
+    .navbar_top_left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      .navbarLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $secondary_color;
+          .img {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            width: 100px;
+            img {
+              width: 50%;
+              height: 100%;
+            }
+          }
+          p {
+            font-size: 13px;
+            width: 87px;
+            overflow-wrap: break-word;
+          }
+        }
+      }
+      .language_changing {
+        .languages {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          .btn {
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            color: $third_color;
+          }
+        }
+      }
+    }
+    .navbar_top_right {
+      .text_sizing {
+        .buttons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          .btn {
+            border: 1.5px solid$third_color;
+            border-radius: 6px;
+            padding: 7px;
+            font-size: 12px;
+            color: $third_color;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .navbar_middle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+    padding: 25px;
+    background: $primary_bg_color;
+    a {
+      color: $primary_color;
+    }
+    .querry {
+      background: $third_color;
+      border: 2px solid #ffffff;
+      border-radius: 5px;
+      padding: 7px 10px;
+      font-size: 14px;
+      box-shadow: 1px 4px 4px -2px rgb(0, 0, 0);
+    }
+  }
+}

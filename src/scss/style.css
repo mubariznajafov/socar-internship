@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.navbar .navbar_top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 740px;
+  align-items: center;
+  margin-right: 50px;
+}
+.navbar .navbar_top .navbar_top_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.navbar .navbar_top .navbar_top_left .navbarLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .navbar_top .navbar_top_left .navbarLogo .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+.navbar .navbar_top .navbar_top_left .navbarLogo .icon .img {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100px;
+}
+.navbar .navbar_top .navbar_top_left .navbarLogo .icon .img img {
+  width: 50%;
+  height: 100%;
+}
+.navbar .navbar_top .navbar_top_left .navbarLogo .icon p {
+  font-size: 13px;
+  width: 87px;
+  overflow-wrap: break-word;
+}
+.navbar .navbar_top .navbar_top_left .language_changing .languages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.navbar .navbar_top .navbar_top_left .language_changing .languages .btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #568eca;
+}
+.navbar .navbar_top .navbar_top_right .text_sizing .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.navbar .navbar_top .navbar_top_right .text_sizing .buttons .btn {
+  border: 1.5px solid #568eca;
+  border-radius: 6px;
+  padding: 7px;
+  font-size: 12px;
+  color: #568eca;
+  cursor: pointer;
+}
+.navbar .navbar_middle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 25px;
+  background: #3674b5;
+}
+.navbar .navbar_middle a {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
