@@ -23,7 +23,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="about element">
+        <div className="about_site element">
           <ul>
             <li>
               <h4>Haqqımızda</h4>

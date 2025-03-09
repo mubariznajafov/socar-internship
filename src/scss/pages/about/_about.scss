@@ -1,0 +1,49 @@
+@use "../../utils/variables" as *;
+.about {
+  font-family: $secondary_font_family;
+  margin: 50px 0;
+  .about_insitute {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    .left_side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      .img {
+        width: 250px;
+        img {
+          width: 100%;
+        }
+      }
+      .insitute_name {
+        font-weight: 500;
+        font-size: 16px;
+        color: $primary_bg_color;
+      }
+    }
+    .right_side {
+      .right_side_top {
+        h3 {
+          font-weight: 700;
+          font-size: 20px;
+          color: $primary_bg_color;
+          margin-bottom: 20px;
+        }
+      }
+      .right_side_bottom {
+        width: 750px;
+
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          text-align: justify;
+          color: $primary_bg_color;
+        }
+      }
+    }
+  }
+}
