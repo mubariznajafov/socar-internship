@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Import useLocation
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./pages/Navbar";
 import Footer from "./pages/Footer";
 import About from "./pages/About";

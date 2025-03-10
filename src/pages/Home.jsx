@@ -20,7 +20,7 @@ const Home = () => {
         <div className="top_page_elements">
           <div className="logo">
             <div className="img">
-              <img src={SocarLogo} />
+              <img src={SocarLogo} alt="socar_logo" />
             </div>
             <div className="buttons">
               <button className="heart btn">
@@ -83,19 +83,19 @@ const Home = () => {
         </div>
         <div className="partners_bottom">
           <div className="img img2">
-            <img src={partner2} alt="" />
+            <img src={partner2} alt="partner_2" />
           </div>
           <div className="img img3">
-            <img src={partner3} alt="" />
+            <img src={partner3} alt="partner_3" />
           </div>
           <div className="img img1">
-            <img src={partner1} alt="" />
+            <img src={partner1} alt="partner_4" />
           </div>
           <div className="img img4">
-            <img src={partner4} alt="" />
+            <img src={partner4} alt="partner_5" />
           </div>
           <div className="img img5">
-            <img src={partner5} alt="" />
+            <img src={partner5} alt="partner_6" />
           </div>
         </div>
       </div>
@@ -120,7 +120,7 @@ const Home = () => {
       </div>
       <div className="map">
         <div className="img">
-          <img src={worldMap} />
+          <img src={worldMap} alt="world_map" />
         </div>
       </div>
       <div className="feedbacks">
@@ -140,7 +140,7 @@ const Home = () => {
               </div>
               <div className="commentor">
                 <div className="img">
-                  <img src={PersonPhoto} />
+                  <img src={PersonPhoto} alt="person_photo" />
                 </div>
                 <div className="name">
                   <p className="company_name">UBOC</p>
@@ -159,7 +159,7 @@ const Home = () => {
               </div>
               <div className="commentor">
                 <div className="img">
-                  <img src={PersonPhoto} />
+                  <img src={PersonPhoto} alt="person_photo" />
                 </div>
                 <div className="name">
                   <p className="company_name">UBOC</p>
@@ -178,7 +178,7 @@ const Home = () => {
               </div>
               <div className="commentor">
                 <div className="img">
-                  <img src={PersonPhoto} />
+                  <img src={PersonPhoto} alt="person_photo" />
                 </div>
                 <div className="name">
                   <p className="company_name">UBOC</p>
