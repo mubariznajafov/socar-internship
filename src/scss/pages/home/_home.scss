@@ -73,6 +73,12 @@
           color: $third_color;
         }
         .btn {
+          .icon {
+            border: 1px solid #3674b5;
+            border-radius: 50%;
+            padding: 3px 4px;
+            font-size: 12px;
+          }
           border: none;
           background: transparent;
           color: $main_color;

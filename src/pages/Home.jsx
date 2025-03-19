@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 import "../scss/pages/home/_home.scss";
 import partner1 from "../assets/photos/partner1.png";
 import partner2 from "../assets/photos/partner2.png";
@@ -15,6 +17,7 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
+  const [counterOn, setCounterOn] = useState(false);
   return (
     <div className="home">
       <div className="top_page">
@@ -52,10 +55,12 @@ const Home = () => {
               işlərini həyata keçirir
             </p>
             <button className="btn">
-              <FontAwesomeIcon
-                icon={faArrowRight}
-                style={{ color: "#3674b5" }}
-              />
+              <div className="icon">
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  style={{ color: "#3674b5" }}
+                />
+              </div>
               Daha ətraflı
             </button>
           </div>
@@ -69,10 +74,12 @@ const Home = () => {
               işlərini həyata keçirir
             </p>
             <button className="btn">
-              <FontAwesomeIcon
-                icon={faArrowRight}
-                style={{ color: "#3674b5" }}
-              />
+              <div className="icon">
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  style={{ color: "#3674b5" }}
+                />
+              </div>
               Daha ətraflı
             </button>
           </div>
@@ -104,20 +111,44 @@ const Home = () => {
         <div className="statistic_top">
           <h1>STATISTIKA</h1>
         </div>
-        <div className="statistic_bottom">
-          <div className="personals card">
-            <h1>800+</h1>
-            <p>İşçi personalı</p>
+        <ScrollTrigger
+          onEnter={() => {
+            setCounterOn(true);
+          }}
+          onExit={() => {
+            setCounterOn(false);
+          }}
+        >
+          <div className="statistic_bottom">
+            <div className="personals card">
+              <h1>
+                {counterOn && (
+                  <CountUp start={0} end={800} duration={2} delay={0} />
+                )}
+                +
+              </h1>
+              <p>İşçi personalı</p>
+            </div>
+            <div className="projects card">
+              <h1>
+                {counterOn && (
+                  <CountUp start={0} end={100} duration={2} delay={0} />
+                )}
+                +
+              </h1>
+              <p>Yerinə yetirilmiş layihə sayı</p>
+            </div>
+            <div className="partners card">
+              <h1>
+                {counterOn && (
+                  <CountUp start={0} end={10} duration={2} delay={0} />
+                )}
+                +
+              </h1>
+              <p>Beynəlxalq tərəfdaşlarımızın sayı</p>
+            </div>
           </div>
-          <div className="projects card">
-            <h1>100+</h1>
-            <p>Yerinə yetirilmiş layihə sayı</p>
-          </div>
-          <div className="partners card">
-            <h1>10+</h1>
-            <p>Beynəlxalq tərəfdaşlarımızın sayı</p>
-          </div>
-        </div>
+        </ScrollTrigger>
       </div>
       <div className="map">
         <div className="map_img">
