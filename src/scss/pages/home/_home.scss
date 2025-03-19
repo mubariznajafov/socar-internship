@@ -177,6 +177,39 @@
     justify-content: center;
     align-items: center;
     margin: 100px;
+    .map_img {
+      position: relative;
+      .locations {
+        .location {
+          position: absolute;
+          font-size: 20px;
+        }
+        .location1 {
+          top: 137px;
+          right: 135px;
+        }
+        .location2 {
+          top: 105px;
+          right: 243px;
+        }
+        .location3 {
+          top: 127px;
+          right: 254px;
+        }
+        .location4 {
+          top: 110px;
+          right: 264px;
+        }
+        .location5 {
+          top: 90px;
+          right: 316px;
+        }
+        .location6 {
+          top: 70px;
+          right: 326px;
+        }
+      }
+    }
   }
   .feedbacks {
     padding: 50px 110px;

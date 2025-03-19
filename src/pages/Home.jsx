@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   return (
@@ -119,8 +120,46 @@ const Home = () => {
         </div>
       </div>
       <div className="map">
-        <div className="img">
+        <div className="map_img">
           <img src={worldMap} alt="world_map" />
+          <div className="locations">
+            <div className="location1 location">
+              <FontAwesomeIcon
+                icon={faLocationDot}
+                style={{ color: "#e1b12c" }}
+              />
+            </div>
+            <div className="location2 location">
+              <FontAwesomeIcon
+                icon={faLocationDot}
+                style={{ color: "#e1b12c" }}
+              />
+            </div>
+            <div className="location3 location">
+              <FontAwesomeIcon
+                icon={faLocationDot}
+                style={{ color: "#e1b12c" }}
+              />
+            </div>
+            <div className="location4 location">
+              <FontAwesomeIcon
+                icon={faLocationDot}
+                style={{ color: "#e1b12c" }}
+              />
+            </div>
+            <div className="location5 location">
+              <FontAwesomeIcon
+                icon={faLocationDot}
+                style={{ color: "#e1b12c" }}
+              />
+            </div>
+            <div className="location6 location">
+              <FontAwesomeIcon
+                icon={faLocationDot}
+                style={{ color: "#e1b12c" }}
+              />
+            </div>
+          </div>
         </div>
       </div>
       <div className="feedbacks">
